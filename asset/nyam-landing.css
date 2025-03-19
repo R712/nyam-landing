@@ -159,11 +159,19 @@ body {
   background: #1A1A1A;
   transition: width 0.4s ease-out, backgroundColor 0.4s ease-out;
 }
-.quotes img {
+.quotes .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 320px;
+  height: 160px;
   border: 12px solid #FAFAFA;
   background: #FAFAFA;
   border-radius: 24px;
+  overflow: hidden;
+}
+.quotes .box img {
+  width: 320px;
 }
 .quotes h4 {
   position: relative;

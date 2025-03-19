@@ -316,22 +316,33 @@ section:last-of-type {
   약관
 */
 .terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 120px 40px 100px;
-  background: rgba(0, 28, 52, 0.03);
-  color: rgba(0, 28, 52, 0.8);
+  width: 100vw;
+  background: #FAFAFA;
+  color: #1A1A1A;
   font-weight: 400;
+  text-align: left;
 }
 .terms .inner {
+  display: flex;
+  flex-direction: column;
   max-width: 980px;
   width: 80vw;
 }
 .terms h1 {
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(15, 84, 78, 0.06);
-  font-size: 32px;
+  border-bottom: 1px solid #EAEAEA;
+  font-size: 22px;
 }
 .terms h2 {
   margin-top: 24px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
 }
 .terms p {
   margin-top: 12px;

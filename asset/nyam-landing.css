@@ -311,3 +311,38 @@ section:last-of-type {
 .copyright a:hover {
   text-decoration: underline;
 }
+
+/*
+  약관
+*/
+.terms {
+  padding: 120px 40px 100px;
+  background: rgba(0, 28, 52, 0.03);
+  color: rgba(0, 28, 52, 0.8);
+  font-weight: 400;
+}
+.terms .inner {
+  max-width: 980px;
+  width: 80vw;
+}
+.terms h1 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(15, 84, 78, 0.06);
+  font-size: 32px;
+}
+.terms h2 {
+  margin-top: 24px;
+}
+.terms p {
+  margin-top: 12px;
+}
+.terms ol {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+.terms ol li {
+  margin-top: 4px;
+}
+.terms ol ol {
+  padding-left: 36px;
+}

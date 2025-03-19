@@ -218,6 +218,10 @@ p.desc {
   font-weight: 300;
 }
 
+section:last-child {
+  background: #FAFAFA;
+}
+
 /*
     푸터
 */

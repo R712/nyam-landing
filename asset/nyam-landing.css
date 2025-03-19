@@ -229,11 +229,12 @@ section:last-of-type {
   position: fixed;
   right: 64px;
   bottom: 64px;
+  display: flex;
+  flex-direction: row;
   padding: 20px 24px;
-  width: 128px;
+  width: 136px;
   background: #EAEAEA;
   color: #1A1A1A;
-  border-radius: 6px;
 }
 .qrcode strong {
   font-size: 16px;

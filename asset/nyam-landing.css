@@ -262,7 +262,7 @@ section:last-of-type {
 }
 .copyright span {
   font-size: 14px;
-  line-height: 1;
+  line-height: 21px;
   word-break: keep-all;
   white-space: nowrap;
 }

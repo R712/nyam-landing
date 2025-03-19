@@ -64,9 +64,6 @@ body {
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
   overflow: hidden;
 }
-.section:nth-child(odd) {
-  background-color: #FEFEFE;
-}
 .visible {
   opacity: 1;
   transform: translateY(0);

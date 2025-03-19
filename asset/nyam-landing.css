@@ -135,12 +135,12 @@ section:last-child {
 
 .quotes {
   display: flex;
-  gap: 48px;
+  gap: 64px;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: flex-start;
-  max-width: 980px;
+  max-width: 880px;
   margin-top: 80px;
 }
 .quotes-item {

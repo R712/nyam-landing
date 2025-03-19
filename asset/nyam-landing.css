@@ -225,6 +225,7 @@ section:last-of-type {
 
 /* QR */
 .qrcode {
+  z-index: 1;
   position: sticky;
   right: 64px;
   bottom: 64px;

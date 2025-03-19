@@ -59,7 +59,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #EAEAEA;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
@@ -113,10 +112,6 @@ body {
 .screenshots img:nth-child(2) {
   top: -64px;
   position: relative;
-}
-
-section:last-child {
-  background: #FAFAFA;
 }
 
 .chemis {
@@ -194,9 +189,11 @@ section:last-child {
   font-weight: 400;
   line-height: 29px;
 }
+
 header {
   background: url(../img/bg.png) no-repeat center top;
   background-size: 100%;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, .1);
 }
 .logo {
   width: 200px;

@@ -226,10 +226,11 @@ section:last-of-type {
 /* QR */
 .qrcode {
   z-index: 1;
-  position: sticky;
+  position: fixed;
   right: 64px;
   bottom: 64px;
   padding: 20px 24px;
+  width: 128px;
   background: #EAEAEA;
   color: #1A1A1A;
   border-radius: 6px;

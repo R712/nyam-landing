@@ -215,7 +215,7 @@ p.desc {
   font-weight: 300;
 }
 
-section:last-child {
+section:last-of-type {
   background: #FAFAFA;
 }
 

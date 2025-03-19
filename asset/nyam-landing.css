@@ -230,7 +230,7 @@ section:last-of-type {
   right: 64px;
   bottom: 64px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 20px 24px;
   width: 136px;
   background: #EAEAEA;

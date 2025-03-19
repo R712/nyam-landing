@@ -285,10 +285,10 @@ section:last-of-type {
   gap: 16px;
   font-size: 14px;
 }
-.copyright nav a {
+.copyright a {
   color: #EAEAEA;
   font-weight: 600;
 }
-.copyright nav a:hover {
+.copyright a:hover {
   text-decoration: underline;
 }

@@ -23,6 +23,7 @@ a,
 button {
   text-decoration: none;
   cursor: pointer !important;
+  font-family: 'Pretendard', sans-serif;
 }
 a:hover, a:hover::before, a:hover::after, a:hover *,
 button:hover,
@@ -223,7 +224,37 @@ section:last-of-type {
   background: #FAFAFA;
 }
 
-/* QR */
+/* Language option */
+.btn-lang {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  padding: 0 16px;
+  height: 36px;
+  border: 2px solid #FFF;
+  background: rgba(0,0,0,.05);
+  color: #7E7E7E;
+  font-weight: 500;
+  font-size: 13px;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+.btn-lang:hover {
+  background: #1A1A1A;
+  color: #EAEAEA;
+}
+.btn-lang:active {
+  transform: scale(1.05);
+}
+.btn-lang:before {
+  content: '👁️';
+  margin-right: 4px;
+  filter: grayscale(100);
+}
+
+/*
+  QR
+*/
 .qrcode {
   z-index: 1;
   position: fixed;
@@ -243,7 +274,7 @@ section:last-of-type {
 }
 
 /*
-    푸터
+  푸터
 */
 .copyright {
   display: flex;
@@ -313,7 +344,67 @@ section:last-of-type {
 }
 
 /*
-  약관
+  Third Pages
+*/
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  cursor: wait;
+} 
+.page h3 {
+  font-size: 22px;
+}
+.page .loader,
+.page [alt=qrcode] {
+  margin: 24px 0;
+}
+.page p {
+  font-weight: 500;
+  font-size: 15px;
+}
+.page a {
+  margin-top: 16px;
+  padding: 4px 8px;
+  background: #EAEAEA;
+  color: #1A1A1A;
+  font-size: 15px;
+  text-decoration: underline;
+  border-radius: 8px;
+}
+
+/*
+  Loading
+*/
+.loader {
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1;
+  border: 10px solid #FFF;
+  padding: 5px;
+  box-sizing: border-box;
+  background: 
+    radial-gradient(farthest-side,#1A1A1A 98%,#FFF0 ) 0 0/20px 20px no-repeat,
+    conic-gradient(from 90deg at 10px 10px,#FFF0 90deg,#1A1A1A 0) content-box,
+    conic-gradient(from -90deg at 40px 40px,#FFF0 90deg,#1A1A1A 0) content-box,
+    #FFF;
+  filter: blur(4px) contrast(10);
+  animation: loadAnime 2s infinite;
+  cursor: wait;
+}
+@keyframes loadAnime {
+  0%   {background-position:0 0}
+  25%  {background-position:100% 0}
+  50%  {background-position:100% 100%}
+  75%  {background-position:0% 100%}
+  100% {background-position:0% 0}
+}
+
+/*
+  Terms
 */
 .terms {
   display: flex;

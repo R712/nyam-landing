@@ -134,6 +134,7 @@ body {
   align-content: center;
   justify-content: flex-start;
   max-width: 920px;
+  min-width: 640px;
   margin-top: 80px;
 }
 .quotes-item {
@@ -143,10 +144,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-}
-.quotes-item:nth-child(2n) {
-  margin-left: 80px;
-  position: relative;
 }
 .quotes-item:hover img {
   transform: scale(1.1);

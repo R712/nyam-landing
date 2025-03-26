@@ -445,3 +445,43 @@ section:last-of-type {
 .terms ol ol {
   padding-left: 36px;
 }
+@media only screen and (max-width: 880px) {
+  h1, h2 {
+    padding: 8px 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .screenshots {
+    display: none;
+  }
+  .screenshots img:nth-child(2) {
+    display: flex;
+  }
+  .qrcode {
+    display: none;
+  }
+  .section {
+    padding: 48px 24px;
+    min-height: 100vh;
+    height: auto;
+  }
+  .quotes {
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+    min-width: auto;
+  }
+  .quotes .text {
+    max-width: 72vw;
+  }
+  .quotes h4 {
+    font-size: 22px;
+  }
+  .quotes p {
+    font-size: 20px;
+  }
+  .quotes-item {
+    gap: 24px;
+    flex-direction: column;
+  }
+}

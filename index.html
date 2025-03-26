@@ -113,11 +113,13 @@
     </aside>
 
 <script>
-    const params = new URLSearchParams(window.location.search);
-    const lang = params.get("lang");
-    document.querySelectorAll("[data-ko]").forEach(el => {
-        lang === "en" ? el.dataset.en : el.dataset.ko;
-    });
+    //const params = new URLSearchParams(window.location.search);
+    //const lang = params.get("lang");
+    //document.querySelectorAll("[data-ko]").forEach(el => {
+    //    lang === "en" ? el.dataset.en : el.dataset.ko;
+    //});
+    //  todo:
+    //  언어 변경시 이미지 경로 스왑시키기
     document.getElementById("lang-toggle").addEventListener("click", function () {
         const isKorean = this.innerHTML === "English";
         document.querySelectorAll("[data-ko]").forEach(el => {

@@ -62,7 +62,7 @@
                 </div>
                 <div class="text">
                     <h4 data-ko="지역 전문가 맛집" data-en="Local Foodie Picks">지역 전문가 맛집</h4>
-                    <p data-ko="이 지역 단골이 추천한다면 믿을만하지!<br>자주 가는 지역의 탐험가, 전문가, 마스터까지 달성해봐요." data-en="Trust the Locals' Recs! Level up: Explorer, Pro, or Master in your go-to spots.">이 지역 단골이 추천한다면 믿을만하지!<br>자주 가는 지역의 탐험가, 전문가, 마스터까지 달성해봐요.</p>
+                    <p data-ko="이 지역 단골이 추천한다면 믿을만하지!<br>자주 가는 지역의 탐험가, 전문가, 마스터까지 달성해봐요." data-en="Trust the Locals' Recs! Level up:<br>Explorer, Pro, or Master in your go-to spots.">이 지역 단골이 추천한다면 믿을만하지!<br>자주 가는 지역의 탐험가, 전문가, 마스터까지 달성해봐요.</p>
                 </div>
             </div>
             <div class="quotes-item">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="text">
                     <h4 data-ko="이건 내가 진심" data-en="Consider it Done">이건 내가 진심</h4>
-                    <p data-ko="고기에 진심인 사람이 추천해야 찐!<br>각 카테고리에 진심인 사람을 구별해요." data-en="Real meat tips from real meat buffs! Follow the fans in each food genre.">고기에 진심인 사람이 추천해야 찐!<br>각 카테고리에 진심인 사람을 구별해요.</p>
+                    <p data-ko="고기에 진심인 사람이 추천해야 찐!<br>각 카테고리에 진심인 사람을 구별해요." data-en="Real meat tips from real meat buffs!<br>Follow the fans in each food genre.">고기에 진심인 사람이 추천해야 찐!<br>각 카테고리에 진심인 사람을 구별해요.</p>
                 </div>
             </div>
         </div>
@@ -98,40 +98,45 @@
                 <a href="mailto:contact@nyam.io" data-ko="제휴신청" data-en="Partnership Inquiry">제휴신청</a>
             </nav>
             <p>
-                <span>상호: 티케이</span>
-                <span>대표: 임태규</span>
-                <span>서울특별시 용산구 한남대로 91, 106동 4층 402호 (나인원 한남)</span>
-                <span>사업자등록번호: 743-08-02979</span>
-                <span>고객센터: <a href="mailto:help@nyam.io">help@nyam.io</a></span>
+                <span data-ko="&copy; 티케이" data-en="&copy; <strong>TK</strong> all rights reserved.">&copy; 티케이</span>
+                <span data-ko="대표: 임태규" data-en="">대표: 임태규</span>
+                <span data-ko="서울특별시 용산구 한남대로 91, 106동 4층 402호 (나인원 한남)" data-en="">서울특별시 용산구 한남대로 91, 106동 4층 402호 (나인원 한남)</span>
+                <span data-ko="사업자등록번호: 743-08-02979" data-en="">사업자등록번호: 743-08-02979</span>
+                <span data-ko="고객센터: <a href='mailto:help@nyam.io'>help@nyam.io</a>" data-en="Contact: <a href='mailto:help@nyam.io'>help@nyam.io</a>">고객센터: <a href="mailto:help@nyam.io">help@nyam.io</a></span>
             </p>
         </div>
     </footer>
     
     <aside class="qrcode">
         <img src="img/qr.svg" alt="냠 앱 QR코드" width="88">
-        <strong data-ko="냠 앱에서<br>맛집을 탐험하고<br>친구를 찾아보세요." data-en="english please">냠 앱에서<br>맛집을 탐험하고<br>친구를 찾아보세요.</strong>
+        <strong data-ko="냠 앱에서<br>맛집을 탐험하고<br>친구를 찾아보세요." data-en="Discover your new favorite flavor & foodie now.">냠 앱에서<br>맛집을 탐험하고<br>친구를 찾아보세요.</strong>
     </aside>
 
-    <script>
-        let txtDummy = document.querySelectorAll("[data-ko]");
-        document.getElementById("lang-toggle").addEventListener("click", function () {
-            const isKorean = this.innerHTML === "English";
-            document.querySelectorAll("[data-ko]").forEach(el => {
-              el.innerHTML = isKorean ? el.dataset.en : el.dataset.ko;
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get("lang");
+    document.querySelectorAll("[data-ko]").forEach(el => {
+        lang === "en" ? el.dataset.en : el.dataset.ko;
+    });
+    document.getElementById("lang-toggle").addEventListener("click", function () {
+        const isKorean = this.innerHTML === "English";
+        document.querySelectorAll("[data-ko]").forEach(el => {
+          el.innerHTML = isKorean ? el.dataset.en : el.dataset.ko;
+        });
+        this.innerHTML = isKorean ? "한국어" : "English";
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
             });
-            this.innerHTML = isKorean ? "한국어" : "English";
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll(".section");
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.3 });
-            sections.forEach((section) => observer.observe(section));
-        });
-    </script>
+        }, { threshold: 0.3 });
+        sections.forEach((section) => observer.observe(section));
+    });
+</script>
+
 </body>
 </html>

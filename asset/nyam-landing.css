@@ -100,7 +100,7 @@ body {
   display: flex;
   margin-bottom: -720px;
   gap: 40px;
-  padding: 128px 0 0 64px;
+  padding: 128px 0 0 54px;
 }
 .screenshots img:hover {
   transform: translateY(-40px);

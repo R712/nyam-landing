@@ -452,7 +452,7 @@ section:last-of-type {
 @media only screen and (max-width: 880px) {
   h1, h2 {
     padding: 8px 0;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 48px;
   }
   .screenshots {
@@ -464,10 +464,16 @@ section:last-of-type {
   .qrcode {
     display: none;
   }
+  .btns img {
+    width: 160px;
+  }
   .section {
-    padding: 48px 24px;
-    min-height: 100vh;
+    padding: 48px 32px;
+    min-height: 72vh;
     height: auto;
+  }
+  header.section {
+    min-height: 100vh;
   }
   .quotes {
     gap: 24px;
@@ -476,7 +482,7 @@ section:last-of-type {
     min-width: auto;
   }
   .quotes .text {
-    max-width: 72vw;
+    max-width: 78vw;
   }
   .quotes h4 {
     font-size: 22px;
@@ -487,5 +493,13 @@ section:last-of-type {
   .quotes-item {
     gap: 24px;
     flex-direction: column;
+  }
+  .copyright nav {
+    display: flex-wrap;
+    gap: 12px;
+  }
+  .copyright a {
+    word-break: keep-all;
+    white-space: nowrap;
   }
 }

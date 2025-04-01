@@ -353,7 +353,7 @@ section:last-of-type {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  cursor: wait;
+  cursor: default;
 } 
 .page h3 {
   font-size: 22px;

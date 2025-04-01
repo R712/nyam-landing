@@ -375,6 +375,18 @@ section:last-of-type {
   text-decoration: underline;
   border-radius: 8px;
 }
+.page .btn {
+  margin-top: 16px;
+  width: 200px;
+  height: 48px;
+  border: 0;
+  background: #1A1A1A;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 48px;
+  border-radius: 6px;
+}
 
 /*
   Loading
@@ -448,6 +460,15 @@ section:last-of-type {
 .terms ol ol {
   padding-left: 36px;
 }
+.img-sign {
+  margin: 24px 0;
+  width: 80px;
+  height: 80px;
+}
+
+/*
+    for responsive small screen
+ */
 @media only screen and (max-width: 880px) {
   h1, h2 {
     padding: 8px 0;

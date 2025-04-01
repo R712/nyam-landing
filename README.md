@@ -5,6 +5,7 @@ Access URL
 - https://r712.github.io/nyam-landing/terms.html
 - https://r712.github.io/nyam-landing/email.html
 - https://r712.github.io/nyam-landing/auth-success.html
+- https://nyam.io 🥰
 
 Todo:
 - auth fail page

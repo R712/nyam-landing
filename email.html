@@ -16,7 +16,7 @@
 <style>
 body {
     margin: 0;
-    padding: 160px 40px;
+    padding: 80px 40px;
     background: #FAFAFA;
 }
 nav {
@@ -46,6 +46,17 @@ h2:before {
     padding-right: 8px;
     color: #6A6A6A;
     font-size: 16px;
+}
+textarea {
+    display: block;
+    margin: 0 auto;
+    max-width: 480px;
+    width: 100%;
+    height: 90px;
+    border: 1px solid #CACACA;
+    color: #3A3A3A;
+    line-height: 19px;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -125,6 +136,36 @@ h2:before {
         </td>
     </tr>
 </table>
+<textarea>
+<table border="0" cellpadding="0" cellspacing="24" width="100%" id="letterWrap" style="border-collapse: collapse;">
+    <tr>
+        <td align="center" valign="center" style="padding: 40px 40px 16px; background: #FAFAFA; cursor: default;">
+            <table data-content="LetterContent" border="0" cellpadding="0" cellspacing="0" width="520" style="border-collapse: collapse; background: #FFFFFF; color: #34495D; border-radius: 10px;">
+                <tr>
+                    <td align="left" valign="center" style="display: flex; align-items: center; padding: 32px 0 16px 32px; line-height: 24px;">
+                      <span data-content="LetterTitle" style="color: #1A1A1A; font-weight: 700; font-size: 16px;">nyam! 이메일 인증</span>
+                    </td>
+                </tr>
+                <tr>
+                  <td data-content="LetterDesc" align="left" valign="top" style="padding: 0 32px 16px; color: #6a6a6a; font-weight: 400; font-size: 14px; line-height: 22px; word-break: keep-all;">아래 버튼을 누르고 이메일 인증을 완료해 주세요.<br>이메일 인증 링크는 발송 시점으로부터 5분간 유효합니다.</td>
+                </tr>
+                <tr>
+                  <td data-content="LetterButton" align="center" valign="top" style="padding: 16px 0 32px; border-top: 1px dotted #FAFAFA;"><a href="https://nyam.io/" style="display: inline-block; text-decoration: none; width: 200px; height: 48px; background: #1A1A1A; color: #FFF; font-weight: 400; font-size: 15px; line-height: 48px; text-align: center; border-radius: 6px;">이메일 인증 완료하기</a></td>
+                </tr>
+                <tr>
+                  <td data-content="LetterDesc" align="left" valign="top" style="padding: 0 32px 24px; color: #6a6a6a; font-weight: 400; font-size: 14px; line-height: 22px; word-break: keep-all;">만약 본 이메일을 요청하지 않으셨다면, 이 메일은 무시해 주시기 바랍니다.</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" style="padding: 24px 0 40px; background: #FAFAFA; cursor: default;">
+            <a href="https://nyam.io/"><img src="img/logo-nyam.svg" alt="brand-logo" border="0" width="100" style="opacity: 0.4;"></a>
+            <span style="display: block; padding: 12px 0; color: #6a6a6a; font-size: 13px; line-height: 22px;">&copy; <strong>냠</strong> 발신 전용 메일입니다.<br>서비스 관련 문의는 <a href="mailto:help@nyam.io" style="color: #6a6a6a;">고객센터</a>를 이용해주세요.</span>
+        </td>
+    </tr>
+</table>
+</textarea>
 <!--
     이메일 인증 링크 본문 끝
 -->
@@ -162,6 +203,36 @@ h2:before {
         </td>
     </tr>
 </table>
+<textarea>
+<table border="0" cellpadding="0" cellspacing="24" width="100%" id="letterWrap" style="border-collapse: collapse;">
+    <tr>
+        <td align="center" valign="center" style="padding: 40px 40px 16px; background: #FAFAFA; cursor: default;">
+            <table data-content="LetterContent" border="0" cellpadding="0" cellspacing="0" width="520" style="border-collapse: collapse; background: #FFFFFF; color: #34495D; border-radius: 10px;">
+                <tr>
+                    <td align="left" valign="center" style="display: flex; align-items: center; padding: 32px 0 16px 32px; line-height: 24px;">
+                      <span data-content="LetterTitle" style="color: #1A1A1A; font-weight: 700; font-size: 16px;">nyam! 비밀번호 재설정</span>
+                    </td>
+                </tr>
+                <tr>
+                  <td data-content="LetterDesc" align="left" valign="top" style="padding: 0 32px 16px; color: #6a6a6a; font-weight: 400; font-size: 14px; line-height: 22px; word-break: keep-all;">아래 버튼을 누르고 비밀번호 재설정을 완료해 주세요.<br>이메일 재설정 링크는 발송 시점으로부터 5분간 유효합니다.</td>
+                </tr>
+                <tr>
+                  <td data-content="LetterButton" align="center" valign="top" style="padding: 16px 0 32px; border-top: 1px dotted #FAFAFA;"><a href="https://nyam.io/" style="display: inline-block; text-decoration: none; width: 200px; height: 48px; background: #1A1A1A; color: #FFF; font-weight: 400; font-size: 15px; line-height: 48px; text-align: center; border-radius: 6px;">비밀번호 재설정하기</a></td>
+                </tr>
+                <tr>
+                  <td data-content="LetterDesc" align="left" valign="top" style="padding: 0 32px 24px; color: #6a6a6a; font-weight: 400; font-size: 14px; line-height: 22px; word-break: keep-all;">만약 본 이메일을 요청하지 않으셨다면, 이 메일은 무시해 주시기 바랍니다.</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" style="padding: 24px 0 40px; background: #FAFAFA; cursor: default;">
+            <a href="https://nyam.io/"><img src="img/logo-nyam.svg" alt="brand-logo" border="0" width="100" style="opacity: 0.4;"></a>
+            <span style="display: block; padding: 12px 0; color: #6a6a6a; font-size: 13px; line-height: 22px;">&copy; <strong>냠</strong> 발신 전용 메일입니다.<br>서비스 관련 문의는 <a href="mailto:help@nyam.io" style="color: #6a6a6a;">고객센터</a>를 이용해주세요.</span>
+        </td>
+    </tr>
+</table>
+</textarea>
 <!--
     비밀번호 재설정 본문 끝
 -->

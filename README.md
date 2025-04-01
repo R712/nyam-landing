@@ -1,11 +1,11 @@
 Access URL
-- https://r712.github.io/nyam-landing/
-- https://r712.github.io/nyam-landing/desktop.html
-- https://r712.github.io/nyam-landing/connect.html
-- https://r712.github.io/nyam-landing/terms.html
-- https://r712.github.io/nyam-landing/email.html
-- https://r712.github.io/nyam-landing/auth-success.html
-- https://nyam.io 🥰
+- 랜딩페이지 https://r712.github.io/nyam-landing/
+- 데스크탑 접근시 https://r712.github.io/nyam-landing/desktop.html
+- 앱으로 연결중 https://r712.github.io/nyam-landing/connect.html
+- 약관 https://r712.github.io/nyam-landing/terms.html
+- 이메일 템플릿 https://r712.github.io/nyam-landing/email.html
+- 인증 성공 https://r712.github.io/nyam-landing/auth-success.html
+- 런칭 https://nyam.io 🥰
 
 Todo:
 - auth fail page

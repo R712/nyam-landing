@@ -5,11 +5,11 @@ Access URL
 - 약관 https://r712.github.io/nyam-landing/terms.html
 - 이메일 템플릿 https://r712.github.io/nyam-landing/email.html
 - 인증 성공 https://r712.github.io/nyam-landing/auth-success.html
+- 인증 실패 https://r712.github.io/nyam-landing/auth-fail.html
 - 런칭 https://nyam.io 🥰
 
 Todo:
-- auth fail page
-- share page before the deeplink
+- qr code data update
 
 Done:
 - Responsible for Small Screen.

@@ -466,10 +466,20 @@ section:last-of-type {
   height: 80px;
 }
 
+[data-screen=mobile] {
+  display: none;
+}
+
 /*
     for responsive small screen
  */
 @media only screen and (max-width: 880px) {
+  [data-screen=mobile] {
+    display: flex;
+  }
+  [data-screen=desktop] {
+    display: none;
+  }
   h1, h2 {
     padding: 8px 0;
     font-size: 36px;

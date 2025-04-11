@@ -1,122 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#ffffff">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://r712.github.io/nyam-landing">
-<meta property="og:title" content="냠! 미식의 새로운 기준">
-<meta property="og:image" content="img/og-image.png">
-<meta property="og:description" content="냠! 미식의 새로운 기준">
-<meta property="og:locale" content="ko_KR">
-<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-<link rel="icon" href="favicon.svg" type="image/x-icon">
-<title> nyam! </title>
-<link rel="stylesheet" href="asset/nyam-landing.css">
-</head>
-    
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://r712.github.io/nyam-landing" />
+        <meta property="og:title" content="냠! 미식의 새로운 기준" />
+        <meta property="og:image" content="img/og-image.png" />
+        <meta property="og:description" content="냠! 미식의 새로운 기준" />
+        <meta property="og:locale" content="ko_KR" />
+        <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+        <link rel="icon" href="favicon.svg" type="image/x-icon" />
+        <title>nyam!</title>
+        <link rel="stylesheet" href="asset/nyam-landing.css" />
+    </head>
 
-    <header class="section">
-    
-        <button id="lang-toggle" class="btn-lang">English</button>
-        <img src="img/logo-nyam.svg" alt="nyam" width="200" class="logo">
-        <h1 class="title" data-ko="미식의 새로운 기준" data-en="The New Standard of Gastronomy">미식의 새로운 기준</h1>
-        <p class="desc" data-ko="내게 꼭 맞는 맛집과 입맛이 닮은 친구를 발견하는 재미" data-en="Find your perfect restaurant and like-minded foodies.">내게 꼭 맞는 맛집과 입맛이 닮은 친구를 발견하는 재미</p>
-        <div class="btns">
-            <a href="#" class="button"><img src="img/btn-ios.svg" class="dummy" alt="앱스토어에서 다운받기" width="180"></a>
-            <a href="#" class="button"><img src="img/btn-google.svg" class="dummy" alt="구글플레이에서 다운받기" width="180"></a>
-        </div>
-        <div class="screenshots">
-            <img src="img/phone-feed.png" class="dummy" alt="스크린샷 - 냠 둘러보기" width="380">
-            <img src="img/phone-dark-profile.png" class="dummy" alt="스크린샷 - 냠 프로필 분석" width="380">
-            <img src="img/phone-match.png" class="dummy" alt="스크린샷 - 냠 비교평가" width="380">
-        </div>
-    </header>
-
-    <section class="section">
-        <h2 data-ko="맛집, 더 깊고 진하게" data-en="Restaurants, indulge more deeply.">맛집, 더 깊고 진하게</h2>
-        <div class="quotes">
-            <div class="quotes-item">
-                <div class="box">
-                    <img src="img/card-chemi1.png" class="dummy" alt="케미분석" width="320">
-                </div>
-                <div class="text">
-                    <h4 data-ko="우리의 입맛 취향은" data-en="Food Compatibility">우리의 입맛 취향은</h4>
-                    <p data-ko="입맛이 꼭 닮은 사람 발견!<br>맛집 추천은 물론 동행하기도 딱이겠죠?" data-en="Taste twins found!<br>Great eats and meetups, right?">입맛이 꼭 닮은 사람 발견!<br>맛집 추천은 물론 동행하기도 딱이겠죠?</p>
-                </div>
-            </div>
-            <div class="quotes-item">
-                <div class="box">
-                    <img src="img/badge-trust.png" class="dummy" alt="로컬주민 뱃지" width="320">
-                </div>
-                <div class="text">
-                    <h4 data-ko="찐 로컬 맛집" data-en="True Local Gems">찐 로컬 맛집</h4>
-                    <p data-ko="동네사람도 찾는 맛집일까?<br>지역을 인증한 주민들이 추천하는 맛집을 발견해요." data-en="Is this place really good?<br>Find restaurants trusted by verified locals.">동네사람도 찾는 맛집일까?<br>지역을 인증한 주민들이 추천하는 맛집을 발견해요.</p>
-                </div>
-            </div>
-            <div class="quotes-item">
-                <div class="box">
-                    <img src="img/badge-area.png" class="dummy" alt="지역전문가 뱃지" width="320">
-                </div>
-                <div class="text">
-                    <h4 data-ko="지역 전문가 맛집" data-en="Local Foodie Picks">지역 전문가 맛집</h4>
-                    <p data-ko="이 지역 단골이 추천한다면 믿을만하지!<br>자주 가는 지역의 탐험가, 전문가, 마스터까지 달성해봐요." data-en="Trust the Locals' Recs! Level up:<br>Explorer, Pro, or Master in your go-to spots.">이 지역 단골이 추천한다면 믿을만하지!<br>자주 가는 지역의 탐험가, 전문가, 마스터까지 달성해봐요.</p>
-                </div>
-            </div>
-            <div class="quotes-item">
-                <div class="box">
-                    <img src="img/badge-food.png" class="dummy" alt="음식분류 뱃지" width="320">
-                </div>
-                <div class="text">
-                    <h4 data-ko="이건 내가 진심" data-en="Consider it Done">이건 내가 진심</h4>
-                    <p data-ko="고기에 진심인 사람이 추천해야 찐!<br>각 카테고리에 진심인 사람을 구별해요." data-en="Real meat tips from real meat buffs!<br>Follow the fans in each food genre.">고기에 진심인 사람이 추천해야 찐!<br>각 카테고리에 진심인 사람을 구별해요.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2 data-ko="지금 새로운 맛집의 세계를 경험하세요." data-en="Grab a new taste world now.">지금 새로운 맛집의 세계를 경험하세요.</h2>
-        <div class="btns">
-            <a href="#" class="button"><img src="img/btn-ios.svg" class="dummy" alt="앱스토어에서 다운받기" width="180"></a>
-            <a href="#" class="button"><img src="img/btn-google.svg" class="dummy" alt="구글플레이에서 다운받기" width="180"></a>
-        </div>
-        <div class="screenshots">
-            <img src="img/phone-nyam.png" class="dummy" alt="스크린샷 - 냠 시작하기" width="480">
-        </div>
-    </section>
-    
-    <footer class="copyright">
-        <div class="copyright-inner">
-            <img src="img/logo-nyam.svg" width="128" height="28" onclick="location.href='./'">
-            <nav>
-                <a href="terms.html" data-ko="이용약관" data-en="Terms of Service">이용약관</a>
-                <a href="terms.html" data-ko="개인정보취급방침" data-en="Privacy Policy">개인정보취급방침</a>
-                <a href="terms.html" data-ko="위치정보 이용약관" data-en="Location Service Terms">위치정보 이용약관</a>
-                <a href="mailto:contact@nyam.io" data-ko="제휴신청" data-en="Partnership Inquiry">제휴신청</a>
-            </nav>
-            <p>
-                <span data-ko="&copy; 티케이" data-en="&copy; <strong>TK</strong> all rights reserved.">&copy; 티케이</span>
-                <span data-ko="대표: 임태규" data-en="">대표: 임태규</span>
-                <span data-ko="서울특별시 용산구 한남대로 91, 106동 4층 402호 (나인원 한남)" data-en="">서울특별시 용산구 한남대로 91, 106동 4층 402호 (나인원 한남)</span>
-                <span data-ko="사업자등록번호: 743-08-02979" data-en="">사업자등록번호: 743-08-02979</span>
-                <span data-ko="고객센터: <a href='mailto:help@nyam.io'>help@nyam.io</a>" data-en="Contact: <a href='mailto:help@nyam.io'>help@nyam.io</a>">고객센터: <a href="mailto:help@nyam.io">help@nyam.io</a></span>
+    <body>
+        <header class="section">
+            <button id="lang-toggle" class="btn-lang">English</button>
+            <img src="img/logo-nyam.svg" alt="nyam" width="200" class="logo" />
+            <h1 class="title" data-ko="미식의 새로운 기준" data-en="The New Standard of Gastronomy">
+                미식의 새로운 기준
+            </h1>
+            <p
+                class="desc"
+                data-ko="내게 꼭 맞는 맛집과 입맛이 닮은 친구를 발견하는 재미"
+                data-en="Find your perfect restaurant and like-minded foodies.">
+                내게 꼭 맞는 맛집과 입맛이 닮은 친구를 발견하는 재미
             </p>
-        </div>
-    </footer>
-    
-    <aside class="qrcode">
-        <img src="img/qr.svg" alt="냠 앱 QR코드" width="88">
-        <strong data-ko="냠 앱에서<br>맛집을 탐험하고<br>친구를 찾아보세요." data-en="Discover your new favorite flavor & foodie now.">냠 앱에서<br>맛집을 탐험하고<br>친구를 찾아보세요.</strong>
-    </aside>
+            <div class="btns">
+                <a href="#" class="button"
+                    ><img src="img/btn-ios.svg" class="dummy" alt="앱스토어에서 다운받기" width="180"
+                /></a>
+                <a href="#" class="button"
+                    ><img src="img/btn-google.svg" class="dummy" alt="구글플레이에서 다운받기" width="180"
+                /></a>
+            </div>
+            <div class="screenshots">
+                <img src="img/phone-feed.png" class="dummy" alt="스크린샷 - 냠 둘러보기" width="380" />
+                <img src="img/phone-dark-profile.png" class="dummy" alt="스크린샷 - 냠 프로필 분석" width="380" />
+                <img src="img/phone-match.png" class="dummy" alt="스크린샷 - 냠 비교평가" width="380" />
+            </div>
+        </header>
 
-<!--
+        <section class="section">
+            <h3 data-ko="맛집, 더 깊고 진하게" data-en="Restaurants, indulge more deeply.">맛집, 더 깊고 진하게</h3>
+            <div class="quotes">
+                <div class="quotes-item">
+                    <div class="box">
+                        <img src="img/card-chemi1.png" class="dummy" alt="케미분석" width="320" />
+                    </div>
+                    <div class="text">
+                        <h4 data-ko="우리의 입맛 취향은" data-en="Food Compatibility">우리의 입맛 취향은</h4>
+                        <p
+                            data-ko="입맛이 꼭 닮은 사람 발견!<br>맛집 추천은 물론 동행하기도 딱이겠죠?"
+                            data-en="Taste twins found!<br>Great eats and meetups, right?">
+                            입맛이 꼭 닮은 사람 발견!<br />맛집 추천은 물론 동행하기도 딱이겠죠?
+                        </p>
+                    </div>
+                </div>
+                <div class="quotes-item">
+                    <div class="box">
+                        <img src="img/badge-trust.png" class="dummy" alt="로컬주민 뱃지" width="320" />
+                    </div>
+                    <div class="text">
+                        <h4 data-ko="찐 로컬 맛집" data-en="True Local Gems">찐 로컬 맛집</h4>
+                        <p
+                            data-ko="동네사람도 찾는 맛집일까?<br>지역을 인증한 주민들이 추천하는 맛집을 발견해요."
+                            data-en="Is this place really good?<br>Find restaurants trusted by verified locals.">
+                            동네사람도 찾는 맛집일까?<br />지역을 인증한 주민들이 추천하는 맛집을 발견해요.
+                        </p>
+                    </div>
+                </div>
+                <div class="quotes-item">
+                    <div class="box">
+                        <img src="img/badge-area.png" class="dummy" alt="지역전문가 뱃지" width="320" />
+                    </div>
+                    <div class="text">
+                        <h4 data-ko="지역 전문가 맛집" data-en="Local Foodie Picks">지역 전문가 맛집</h4>
+                        <p
+                            data-ko="이 지역 단골이 추천한다면 믿을만하지!<br>자주 가는 지역의 탐험가, 전문가, 마스터까지 달성해봐요."
+                            data-en="Trust the Locals' Recs! Level up:<br>Explorer, Pro, or Master in your go-to spots.">
+                            이 지역 단골이 추천한다면 믿을만하지!<br />자주 가는 지역의 탐험가, 전문가, 마스터까지
+                            달성해봐요.
+                        </p>
+                    </div>
+                </div>
+                <div class="quotes-item">
+                    <div class="box">
+                        <img src="img/badge-food.png" class="dummy" alt="음식분류 뱃지" width="320" />
+                    </div>
+                    <div class="text">
+                        <h4 data-ko="이건 내가 진심" data-en="Consider it Done">이건 내가 진심</h4>
+                        <p
+                            data-ko="고기에 진심인 사람이 추천해야 찐!<br>각 카테고리에 진심인 사람을 구별해요."
+                            data-en="Real meat tips from real meat buffs!<br>Follow the fans in each food genre.">
+                            고기에 진심인 사람이 추천해야 찐!<br />각 카테고리에 진심인 사람을 구별해요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 data-ko="지금 새로운 맛집의 세계를 경험하세요." data-en="Grab a new taste world now.">
+                지금 새로운 맛집의 세계를 경험하세요.
+            </h3>
+            <div class="btns">
+                <a href="#" class="button"
+                    ><img src="img/btn-ios.svg" class="dummy" alt="앱스토어에서 다운받기" width="180"
+                /></a>
+                <a href="#" class="button"
+                    ><img src="img/btn-google.svg" class="dummy" alt="구글플레이에서 다운받기" width="180"
+                /></a>
+            </div>
+            <div class="screenshots">
+                <img src="img/phone-nyam.png" class="dummy" alt="스크린샷 - 냠 시작하기" width="480" />
+            </div>
+        </section>
+
+        <footer class="copyright">
+            <div class="copyright-inner">
+                <img src="img/logo-nyam.svg" width="128" height="28" onclick="location.href='./'" />
+                <nav>
+                    <a href="terms.html" data-ko="이용약관" data-en="Terms of Service">이용약관</a>
+                    <a href="terms-privacy.html" data-ko="개인정보취급방침" data-en="Privacy Policy"
+                        >개인정보처리방침</a
+                    >
+                    <a href="terms-location.html" data-ko="위치정보 이용약관" data-en="Location Service Terms"
+                        >위치기반서비스 이용약관</a
+                    >
+                    <a href="mailto:contact@nyam.io" data-ko="제휴신청" data-en="Partnership Inquiry">제휴신청</a>
+                </nav>
+                <p>
+                    <span data-ko="&copy; 티케이" data-en="&copy; <strong>TK</strong> all rights reserved."
+                        >&copy; 티케이</span
+                    >
+                    <span data-ko="대표: 임태규" data-en="">대표: 임태규</span>
+                    <span data-ko="서울특별시 용산구 한남대로 91, 106동 4층 402호 (나인원 한남)" data-en=""
+                        >서울특별시 용산구 한남대로 91, 106동 4층 402호 (나인원 한남)</span
+                    >
+                    <span data-ko="사업자등록번호: 743-08-02979" data-en="">사업자등록번호: 743-08-02979</span>
+                    <span
+                        data-ko="고객센터: <a href='mailto:help@nyam.io'>help@nyam.io</a>"
+                        data-en="Contact: <a href='mailto:help@nyam.io'>help@nyam.io</a>"
+                        >고객센터: <a href="mailto:help@nyam.io">help@nyam.io</a></span
+                    >
+                </p>
+            </div>
+        </footer>
+
+        <aside class="qrcode">
+            <img src="img/qr.svg" alt="냠 앱 QR코드" width="88" />
+            <strong
+                data-ko="냠 앱에서<br>맛집을 탐험하고<br>친구를 찾아보세요."
+                data-en="Discover your new favorite flavor & foodie now."
+                >냠 앱에서<br />맛집을 탐험하고<br />친구를 찾아보세요.</strong
+            >
+        </aside>
+
+        <!--
 언어 옵션
 섹션 스크롤 효과
 -->
-<script src="asset/nyam-landing.js" defer></script>
-
-</body>
+        <script src="asset/nyam-landing.js" defer></script>
+    </body>
 </html>

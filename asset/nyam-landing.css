@@ -418,6 +418,7 @@ section:last-of-type {
 /*
   Terms
 */
+
 .terms {
   display: flex;
   flex-direction: column;
@@ -425,40 +426,81 @@ section:last-of-type {
   justify-content: center;
   padding: 120px 40px 100px;
   width: 100vw;
-  background: #FAFAFA;
-  color: #1A1A1A;
+  background: #fafafa;
+  color: #1a1a1a;
   font-weight: 400;
   text-align: left;
 }
 .terms .inner {
   display: flex;
   flex-direction: column;
+  padding: 0 16px;
   max-width: 980px;
   width: 80vw;
 }
 .terms h1 {
-  padding-bottom: 8px;
-  border-bottom: 1px solid #EAEAEA;
-  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px -8px;
+  background: #fff;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 24px;
+}
+.terms sub {
+  color: #7e7e7e;
+  font-weight: 400;
+  font-size: 18px;
 }
 .terms h2 {
   margin-top: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eaeaea;
   font-size: 28px;
+}
+.terms h3 {
+  margin-top: 24px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 32px;
 }
 .terms p {
   margin-top: 12px;
 }
-.terms ol {
+.terms ol,
+.terms ul {
   margin-top: 12px;
   padding-left: 20px;
 }
-.terms ol li {
+.terms li {
   margin-top: 4px;
 }
 .terms ol ol {
-  padding-left: 36px;
+  margin: 8px 0;
+  padding-left: 32px;
+  list-style: lower-alpha;
+}
+.terms table {
+  margin: 12px 0 16px;
+  border-collapse: collapse;
+  border: 1px solid #eaeaea;
+}
+.terms thead {
+  font-weight: 600;
+}
+.terms td,
+.terms th {
+  padding: 4px 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  font-size: 14px;
+}
+.terms a {
+  color: #1146cd;
+  text-decoration: underline;
 }
 .img-sign {
   margin: 24px 0;

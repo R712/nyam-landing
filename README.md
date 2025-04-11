@@ -3,6 +3,8 @@ Access URL
 - 데스크탑 접근시 https://r712.github.io/nyam-landing/desktop.html
 - 앱으로 연결중 https://r712.github.io/nyam-landing/connect.html
 - 약관 https://r712.github.io/nyam-landing/terms.html
+- 개인정보약관 https://r712.github.io/nyam-landing/terms-privacy.html
+- 위치정보약관 https://r712.github.io/nyam-landing/terms-location.html
 - 이메일 템플릿 https://r712.github.io/nyam-landing/email.html
 - 인증 성공 https://r712.github.io/nyam-landing/auth-success.html
 - 인증 성공 (데스크탑) https://r712.github.io/nyam-landing/auth-success-desktop.html
